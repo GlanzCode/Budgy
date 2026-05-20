@@ -1,0 +1,354 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\psesbit\\source\\repos\\Costly\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6E6EB6-EA88-4C0B-855F-DA5145BD01C3}|Budgy.Test\\Budgy.Test.csproj|c:\\users\\psesbit\\source\\repos\\costly\\budgy.test\\calculationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F6E6EB6-EA88-4C0B-855F-DA5145BD01C3}|Budgy.Test\\Budgy.Test.csproj|solutionrelative:budgy.test\\calculationservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\calculationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|solutionrelative:costly\\calculationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6E6EB6-EA88-4C0B-855F-DA5145BD01C3}|Budgy.Test\\Budgy.Test.csproj|c:\\users\\psesbit\\source\\repos\\costly\\budgy.test\\budgy.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4F6E6EB6-EA88-4C0B-855F-DA5145BD01C3}|Budgy.Test\\Budgy.Test.csproj|solutionrelative:budgy.test\\budgy.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Budgy.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\budgy.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Budgy.csproj|solutionrelative:costly\\budgy.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\icalculationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|solutionrelative:costly\\icalculationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|solutionrelative:costly\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\ientryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|solutionrelative:costly\\ientryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|solutionrelative:costly\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|solutionrelative:costly\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\entry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|solutionrelative:costly\\entry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\entryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|solutionrelative:costly\\entryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\entryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|solutionrelative:costly\\entryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|solutionrelative:costly\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\entrypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|solutionrelative:costly\\entrypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|solutionrelative:costly\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|c:\\users\\psesbit\\source\\repos\\costly\\costly\\entrypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{198250E4-3EFA-8710-6AEB-6D8BB5C25B6E}|Costly\\Costly.csproj|solutionrelative:costly\\entrypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e8dff102-bb33-395a-a78c-ae521f3d42ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{587910af-a90a-3787-8b7a-65e34824fa7c}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{53d10d51-d2d8-3452-ab88-12f687ed0782}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f6c90d9a-1aa8-32e5-baac-467b7262213c}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ce0010b1-93a1-33bb-8d9c-bcc1bf6c4873}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e3fb24c2-2e84-3146-a5f8-bc25bbc68f8a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0672c6e1-9edf-3be9-8226-f0823640821e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{936b24b7-e640-3186-98a7-24307bb298e0}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Budgy",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\Budgy.csproj",
+              "RelativeDocumentMoniker": "Costly\\Budgy.csproj",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\Budgy.csproj",
+              "RelativeToolTip": "Costly\\Budgy.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-20T06:48:48.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Budgy.Test",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Budgy.Test\\Budgy.Test.csproj",
+              "RelativeDocumentMoniker": "Budgy.Test\\Budgy.Test.csproj",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Budgy.Test\\Budgy.Test.csproj",
+              "RelativeToolTip": "Budgy.Test\\Budgy.Test.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-20T06:48:23.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalculationServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Budgy.Test\\CalculationServiceTests.cs",
+              "RelativeDocumentMoniker": "Budgy.Test\\CalculationServiceTests.cs",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Budgy.Test\\CalculationServiceTests.cs",
+              "RelativeToolTip": "Budgy.Test\\CalculationServiceTests.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T06:42:10.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalculationService.cs",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\CalculationService.cs",
+              "RelativeDocumentMoniker": "Costly\\CalculationService.cs",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\CalculationService.cs",
+              "RelativeToolTip": "Costly\\CalculationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T06:39:26.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICalculationService.cs",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\ICalculationService.cs",
+              "RelativeDocumentMoniker": "Costly\\ICalculationService.cs",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\ICalculationService.cs",
+              "RelativeToolTip": "Costly\\ICalculationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T06:39:16.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Entry.cs",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\Entry.cs",
+              "RelativeDocumentMoniker": "Costly\\Entry.cs",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\Entry.cs",
+              "RelativeToolTip": "Costly\\Entry.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T06:33:20.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IEntryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\IEntryRepository.cs",
+              "RelativeDocumentMoniker": "Costly\\IEntryRepository.cs",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\IEntryRepository.cs",
+              "RelativeToolTip": "Costly\\IEntryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T06:29:26.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EntryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\EntryRepository.cs",
+              "RelativeDocumentMoniker": "Costly\\EntryRepository.cs",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\EntryRepository.cs",
+              "RelativeToolTip": "Costly\\EntryRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T06:28:58.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "Costly\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\MainViewModel.cs",
+              "RelativeToolTip": "Costly\\MainViewModel.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T10:32:17.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "Costly\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\BaseViewModel.cs",
+              "RelativeToolTip": "Costly\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T10:30:49.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EntryPage.xaml",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\EntryPage.xaml",
+              "RelativeDocumentMoniker": "Costly\\EntryPage.xaml",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\EntryPage.xaml",
+              "RelativeToolTip": "Costly\\EntryPage.xaml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-19T09:35:10.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EntryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\EntryViewModel.cs",
+              "RelativeDocumentMoniker": "Costly\\EntryViewModel.cs",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\EntryViewModel.cs",
+              "RelativeToolTip": "Costly\\EntryViewModel.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAqwEUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T09:29:33.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EntryPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\EntryPage.xaml.cs",
+              "RelativeDocumentMoniker": "Costly\\EntryPage.xaml.cs",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\EntryPage.xaml.cs",
+              "RelativeToolTip": "Costly\\EntryPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T09:29:30.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "Costly\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\MauiProgram.cs",
+              "RelativeToolTip": "Costly\\MauiProgram.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBoAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T08:35:53.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Costly\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\MainPage.xaml.cs",
+              "RelativeToolTip": "Costly\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T07:57:19.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Costly\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\psesbit\\source\\repos\\Costly\\Costly\\MainPage.xaml",
+              "RelativeToolTip": "Costly\\MainPage.xaml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-18T07:44:45.47Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 81,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

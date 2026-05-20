@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Budgy.Test/Budgy.Test.csproj" Id="4f6e6eb6-ea88-4c0b-855f-da5145bd01c3" />
+  <Project Path="Budgy/Budgy.csproj" />
+</Solution>

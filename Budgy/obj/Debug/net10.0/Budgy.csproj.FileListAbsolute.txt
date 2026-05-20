@@ -1,0 +1,13 @@
+C:\Users\psesbit\source\repos\Budgy\Budgy\obj\Debug\net10.0\Budgy.csproj.AssemblyReference.cache
+C:\Users\psesbit\source\repos\Budgy\Budgy\obj\Debug\net10.0\Budgy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\psesbit\source\repos\Budgy\Budgy\obj\Debug\net10.0\Budgy.AssemblyInfoInputs.cache
+C:\Users\psesbit\source\repos\Budgy\Budgy\obj\Debug\net10.0\Budgy.AssemblyInfo.cs
+C:\Users\psesbit\source\repos\Budgy\Budgy\obj\Debug\net10.0\Budgy.csproj.CoreCompileInputs.cache
+C:\Users\psesbit\source\repos\Budgy\Budgy\bin\Debug\net10.0\Budgy.deps.json
+C:\Users\psesbit\source\repos\Budgy\Budgy\bin\Debug\net10.0\Budgy.dll
+C:\Users\psesbit\source\repos\Budgy\Budgy\bin\Debug\net10.0\Budgy.pdb
+C:\Users\psesbit\source\repos\Budgy\Budgy\obj\Debug\net10.0\XamlC.stamp
+C:\Users\psesbit\source\repos\Budgy\Budgy\obj\Debug\net10.0\Budgy.dll
+C:\Users\psesbit\source\repos\Budgy\Budgy\obj\Debug\net10.0\refint\Budgy.dll
+C:\Users\psesbit\source\repos\Budgy\Budgy\obj\Debug\net10.0\Budgy.pdb
+C:\Users\psesbit\source\repos\Budgy\Budgy\obj\Debug\net10.0\ref\Budgy.dll
