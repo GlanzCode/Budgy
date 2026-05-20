@@ -5,4 +5,4 @@ Track your Budget and your fix costs
 - Add fix Expenses
 - Add fix Income
 - Get an overview of your Budget and costs
-- Charts of your categorizes
+- Charts of your categorizes (Soon)
