@@ -3,7 +3,8 @@
     x:Class="Budgy.EntryPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="{Binding Title}">
+    Title="{Binding Title}"
+    Appearing="ContentPage_Appearing">
     <Grid>
         <VerticalStackLayout Padding="12" Spacing="12">
             <Entry Placeholder="Titel" Text="{Binding Title}" />
@@ -22,6 +23,18 @@
                 <Label Grid.Column="0" Text="{Binding ExpenseText}" />
                 <Switch Grid.Column="1" IsToggled="{Binding IsExpense}" />
             </Grid>
+            <Grid ColumnDefinitions="*, Auto">
+                <Picker
+                    Title="Kategorie"
+                    Grid.Column="0"
+                    ItemDisplayBinding="{Binding Name}"
+                    ItemsSource="{Binding Categories}"
+                    SelectedItem="{Binding SelectedCategory}" />
+                <ImageButton
+                    Grid.Column="1"
+                    Command="{Binding ClearSelectedCategoryCommand}"
+                    Source="delete_white.png" />
+            </Grid>
             <Editor AutoSize="TextChanges" Text="{Binding Description}" />
         </VerticalStackLayout>
         <Button
@@ -29,7 +42,7 @@
             Command="{Binding SaveCommand}"
             CornerRadius="40"
             HeightRequest="80"
-            ImageSource="add.png"
+            ImageSource="add_white.png"
             VerticalOptions="End"
             WidthRequest="80" />
     </Grid>

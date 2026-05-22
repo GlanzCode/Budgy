@@ -22,6 +22,14 @@ public sealed partial class MainViewModel : BaseViewModel
     [ObservableProperty]
     private decimal _budgetAmount;
 
+    public ObservableCollection<SalesData> Data { get; set; } = new()
+    {
+        new("Jan", 120),
+        new("Feb", 85),
+        new("Mar", 200),
+        new("Apr", 150),
+    };
+
     public ObservableCollection<Entry> Entries { get; private set; }
     public MainViewModel(ILogger<MainViewModel> logger, IEntryRepository entryRepository, ICalculationService calculationService) : base(logger)
     {
@@ -35,6 +43,9 @@ public sealed partial class MainViewModel : BaseViewModel
     [RelayCommand]
     private async Task ShowPage()
     {
+       
+
+
         await LoadEntries();
         CalculateData();
     }

@@ -3,6 +3,7 @@
     x:Class="Budgy.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
     xmlns:local="clr-namespace:Budgy"
     x:DataType="local:MainViewModel"
     Appearing="ContentPage_Appearing"
@@ -72,41 +73,13 @@
                     <Label Grid.Row="1" Text="Budget" />
                 </Grid>
             </Border>
-            <CollectionView
-                Grid.Row="2"
-                Grid.ColumnSpan="2"
-                ItemsSource="{Binding Entries}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="local:Entry">
-                        <SwipeView>
-                            <SwipeView.RightItems>
-                                <SwipeItems Mode="Reveal">
-                                    <SwipeItem
-                                        BackgroundColor="DarkRed"
-                                        Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.DeleteCommand}"
-                                        CommandParameter="{Binding}"
-                                        IsDestructive="True"
-                                        Text="Löschen" />
-                                </SwipeItems>
-                            </SwipeView.RightItems>
-                            <Grid Padding="12" ColumnDefinitions="*, Auto">
-                                <Label Grid.Column="0" Text="{Binding Title}" />
-                                <Label Grid.Column="1" Text="{Binding ExpenseText}" />
-                                <Grid.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.OpenCommand}" CommandParameter="{Binding}" />
-                                </Grid.GestureRecognizers>
-                            </Grid>
-                        </SwipeView>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
         </Grid>
         <Button
             Margin="0,0,0,100"
             Command="{Binding AddEntryCommand}"
             CornerRadius="40"
             HeightRequest="80"
-            ImageSource="add.png"
+            ImageSource="add_white.png"
             VerticalOptions="End"
             WidthRequest="80" />
     </Grid>

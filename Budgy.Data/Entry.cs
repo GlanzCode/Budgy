@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Budgy.Feature.Category;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -21,6 +22,10 @@ public sealed class Entry
     public decimal Amount { get; set; }
 
     public bool IsExpense { get; set; }
+
+    public int? CategoryId { get; set; }
+
+    public Category? Category { get; set; } = null;
 
     [NotMapped]
     public string ExpenseText => IsExpense ? "Expense" : "Income";

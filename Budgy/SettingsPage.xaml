@@ -2,7 +2,8 @@
 <ContentPage
     x:Class="Budgy.SettingsPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Appearing="ContentPage_Appearing">
     <VerticalStackLayout Padding="12">
         <Grid ColumnDefinitions="*, Auto">
             <Label
@@ -11,5 +12,49 @@
                 VerticalTextAlignment="Center" />
             <Switch Grid.Column="1" IsToggled="{Binding IsDarkModeEnabled}" />
         </Grid>
+        <Border
+            Padding="12"
+            BackgroundColor="{AppThemeBinding Dark=DimGray,
+                                              Light=Gray}"
+            StrokeShape="RoundRectangle 12">
+            <Grid
+                ColumnDefinitions="*, Auto"
+                RowDefinitions="Auto, *"
+                RowSpacing="12">
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    FontAttributes="Bold"
+                    Text="Kategorien" />
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Source="add_white.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AddCategoryCommand}" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <CollectionView
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    ItemsSource="{Binding Categories}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnDefinitions="*, Auto">
+                                <Label Grid.Column="0" Text="{Binding Name}" />
+                                <Border
+                                    Grid.Column="1"
+                                    BackgroundColor="{Binding Color}"
+                                    HeightRequest="20"
+                                    Stroke="Transparent"
+                                    StrokeShape="RoundRectangle 10"
+                                    StrokeThickness="0"
+                                    WidthRequest="20" />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </Border>
     </VerticalStackLayout>
 </ContentPage>
