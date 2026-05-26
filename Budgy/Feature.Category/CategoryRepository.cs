@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Budgy.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Budgy.Feature.Category;
 
@@ -21,17 +22,17 @@ public sealed class CategoryRepository : BaseRepository, ICategoryRepository
         await _db.SaveChangesAsync(); 
     }
 
-    public async Task<IEnumerable<Category>> GetCategories()
+    public async Task<IEnumerable<Data.Category>> GetCategories()
     {        
        return await _db.Categories.AsNoTracking().ToListAsync();
     }
 
-    public async Task<Category?> GetGategoryById(int id)
+    public async Task<Data.Category?> GetGategoryById(int id)
     {
         return await _db.Categories.FirstOrDefaultAsync(q => q.Id == id);
     }
 
-    public async Task<Category> Save(Category category)
+    public async Task<Data.Category> Save(Data.Category category)
     {
         var existing = await GetGategoryById(category.Id);
 

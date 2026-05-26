@@ -1,4 +1,5 @@
-﻿using Budgy.Feature.Category;
+﻿using Budgy.Data;
+using Budgy.Feature.Category;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Extensions.Logging;

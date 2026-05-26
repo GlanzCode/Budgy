@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Budgy.ListPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:data="clr-namespace:Budgy.Data;assembly=Budgy.Data"
+    Title="ListPage"
+    Appearing="ContentPage_Appearing"
+    Shell.NavBarIsVisible="False">
+    <Grid
+        Padding="12"
+        RowDefinitions="Auto, *"
+        RowSpacing="12">
+        <SearchBar
+            Grid.Row="0"
+            Placeholder="Suche nach Einträgen..."
+            Text="{Binding SearchText, Mode=TwoWay}" />
+        <CollectionView
+            Grid.Row="1"
+            ItemSizingStrategy="MeasureFirstItem"
+            ItemsSource="{Binding Entries}"
+            SelectionMode="None">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout ItemSpacing="12" Orientation="Vertical" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="data:Entry">
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems Mode="Execute">
+                                <SwipeItem
+                                    BackgroundColor="DarkRed"
+                                    Command="{Binding Source={x:RelativeSource AncestorType=ContentPage}, Path=BindingContext.DeleteEntryCommand}"
+                                    CommandParameter="{Binding}"
+                                    IsDestructive="True"
+                                    Text="Löschen" />
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                        <Grid
+                            ColumnDefinitions="Auto, Auto, Auto"
+                            ColumnSpacing="6"
+                            RowDefinitions="Auto, Auto">
+                            <Border
+                                Grid.RowSpan="2"
+                                Grid.Column="0"
+                                BackgroundColor="{Binding Category.Color}"
+                                HeightRequest="20"
+                                Stroke="Transparent"
+                                StrokeShape="RoundRectangle 10"
+                                StrokeThickness="0"
+                                WidthRequest="20" />
+
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                FontAttributes="Bold"
+                                Text="{Binding Title}" />
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                Text="{Binding ExpenseText}" />
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Text="{Binding PayDate, StringFormat='{}{0:dd.MM.yyyy}'}"
+                                TextColor="Gray" />
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType=ContentPage}, Path=BindingContext.OpenEntryCommand}" CommandParameter="{Binding}" />
+                            </Grid.GestureRecognizers>
+                        </Grid>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

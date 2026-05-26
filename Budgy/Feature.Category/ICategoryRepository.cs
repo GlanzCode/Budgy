@@ -6,8 +6,8 @@ namespace Budgy.Feature.Category;
 
 public interface ICategoryRepository
 {
-    Task<IEnumerable<Category>> GetCategories();
-    Task<Category?> GetGategoryById(int id);
-    Task<Category> Save(Category category);
+    Task<IEnumerable<Data.Category>> GetCategories();
+    Task<Data.Category?> GetGategoryById(int id);
+    Task<Data.Category> Save(Data.Category category);
     Task Delete(int id);
 }

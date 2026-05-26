@@ -17,7 +17,7 @@ public sealed partial class CategoryViewModel : BaseViewModel
     [ObservableProperty]
     private string _colorHex;
 
-    public Category CurrentCategory
+    public Data.Category CurrentCategory
     {
         get;
         set
@@ -41,7 +41,7 @@ public sealed partial class CategoryViewModel : BaseViewModel
         if (!IsValid())
             return;
 
-        var category = new Category()
+        var category = new Data.Category()
         {
             Id = CurrentCategory?.Id ?? 0,
             Name = Name,

@@ -1,4 +1,5 @@
-﻿using Budgy.Feature.Category;
+﻿using Budgy.Data;
+using Budgy.Feature.Category;
 using CommunityToolkit.Maui;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -25,16 +26,10 @@ namespace Budgy
     		builder.Logging.AddDebug();
 #endif
 
-            builder.Services.AddTransientWithShellRoute<MainPage, MainViewModel>(nameof(MainPage));
-            builder.Services.AddTransientWithShellRoute<EntryPage, EntryViewModel>(nameof(EntryPage));
-            builder.Services.AddTransientWithShellRoute<SettingsPage, SettingsViewModel>(nameof(SettingsPage));
-            builder.Services.AddTransientWithShellRoute<CategoryPage, CategoryViewModel>(nameof(CategoryPage));
-            builder.Services.AddTransient<IEntryRepository, EntryRepository>();
-            builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
-            builder.Services.AddTransient<ICalculationService, CalculationService>();
-
-            string path = Path.Combine(FileSystem.AppDataDirectory, AppDbContext.DatabaseName);
-            IServiceCollection serviceCollection = builder.Services.AddTransient(q => new AppDbContext() { DbPath = path });
+            builder.Services.AddTransientPages();
+            builder.Services.AddRepositories();
+            builder.Services.AddServices();
+            builder.Services.AddDbContext();
 
             var app =  builder.Build();
 

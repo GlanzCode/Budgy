@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Budgy.Feature.Category;
+namespace Budgy.Data;
 
 public sealed class Category
 {
