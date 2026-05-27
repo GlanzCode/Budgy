@@ -58,6 +58,8 @@ public sealed partial class SettingsViewModel : BaseViewModel
     {
         var categories = await _categoryRepository.GetCategories();
 
+        Categories.Clear();
+
         foreach (var category in categories)
         {
             Categories.Add(category);

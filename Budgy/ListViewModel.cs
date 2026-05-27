@@ -57,6 +57,9 @@ public sealed partial class ListViewModel : BaseViewModel
     {
         var entries = await _entryRepository.GetEntriesWithCategory();
 
+        _entries.Clear();
+        Entries.Clear();
+
         _entries.AddRange(entries);
 
         foreach (var item in _entries)
