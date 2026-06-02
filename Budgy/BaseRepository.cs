@@ -1,4 +1,6 @@
-﻿namespace Budgy
+﻿using Budgy.Data;
+
+namespace Budgy
 {
     public abstract class BaseRepository
     {

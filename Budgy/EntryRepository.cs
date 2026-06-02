@@ -1,7 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Budgy.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Entry = Budgy.Data.Entry;
 
 namespace Budgy;
 
@@ -26,6 +28,11 @@ public sealed class EntryRepository : BaseRepository, IEntryRepository
     public async Task<IEnumerable<Entry>> GetEntries()
     {
         return await _db.Entries.AsNoTracking().ToListAsync();
+    }
+
+    public async Task<IEnumerable<Entry>> GetEntriesWithCategory()
+    {
+        return await _db.Entries.Include(x => x.Category).AsNoTracking().ToListAsync();
     }
 
     public async Task<Entry?> GetEntryById(int id)

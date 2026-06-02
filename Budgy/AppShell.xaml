@@ -7,7 +7,13 @@
     Title="Budgy">
 
     <TabBar>
-        <Tab Title="Home" Icon="home_filled.png">
+        <Tab Title="Einträge" Icon="list_white.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ListPage}" Route="ListPage" />
+        </Tab>
+        <Tab
+            x:Name="HomeTab"
+            Title="Home"
+            Icon="home_filled.png">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
         </Tab>
         <Tab Title="Einstellungen" Icon="settings_filled.png">

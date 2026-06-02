@@ -1,4 +1,10 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="Budgy.Data/Budgy.Data.csproj" Id="1dcad04c-19b3-4aa5-8bea-083d5a28fbca" />
   <Project Path="Budgy.Test/Budgy.Test.csproj" Id="4f6e6eb6-ea88-4c0b-855f-da5145bd01c3" />
-  <Project Path="Budgy/Budgy.csproj" />
+  <Project Path="Budgy/Budgy.csproj">
+    <Deploy />
+  </Project>
 </Solution>
