@@ -24,7 +24,7 @@
                 ColumnDefinitions="*,*"
                 ColumnSpacing="12"
                 RowDefinitions="Auto, Auto, Auto, Auto"
-                RowSpacing="6">
+                RowSpacing="12">
                 <Border
                     Grid.Row="0"
                     Grid.ColumnSpan="2"
@@ -68,7 +68,7 @@
                     </Grid>
                 </Border>
                 <Border
-                    Grid.Row="2"
+                    Grid.Row="1"
                     Grid.ColumnSpan="2"
                     Padding="6"
                     BackgroundColor="{AppThemeBinding Dark=DimGray,
@@ -77,7 +77,10 @@
                     StrokeShape="RoundRectangle 12"
                     StrokeThickness="0">
                     <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, Auto, Auto">
-                        <Label Grid.Row="0" Text="Fixkosten Quote" />
+                        <Label
+                            Grid.Row="0"
+                            FontAttributes="Bold"
+                            Text="Fixkosten Quote" />
                         <Label
                             Grid.Row="0"
                             Grid.Column="1"
@@ -97,16 +100,19 @@
                 </Border>
 
                 <Border
-                    Grid.Row="3"
+                    Grid.Row="2"
                     Grid.Column="0"
                     BackgroundColor="{AppThemeBinding Dark=DimGray,
                                                       Light=Gray}"
-                    HeightRequest="350"
+                    HeightRequest="320"
                     Stroke="Transparent"
                     StrokeShape="RoundRectangle 12"
                     StrokeThickness="0">
                     <VerticalStackLayout>
-                        <Label HorizontalTextAlignment="Center" Text="Ausgaben pro Kategorie" />
+                        <Label
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"
+                            Text="Ausgaben pro Kategorie" />
                         <lvc:PieChart
                             BackgroundColor="{AppThemeBinding Dark=DimGray,
                                                               Light=Gray}"
@@ -116,16 +122,19 @@
                     </VerticalStackLayout>
                 </Border>
                 <Border
-                    Grid.Row="3"
+                    Grid.Row="2"
                     Grid.Column="1"
                     BackgroundColor="{AppThemeBinding Dark=DimGray,
                                                       Light=Gray}"
-                    HeightRequest="350"
+                    HeightRequest="320"
                     Stroke="Transparent"
                     StrokeShape="RoundRectangle 12"
                     StrokeThickness="0">
                     <VerticalStackLayout>
-                        <Label HorizontalTextAlignment="Center" Text="Einnahmen pro Kategorie" />
+                        <Label
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"
+                            Text="Einnahmen pro Kategorie" />
                         <lvc:PieChart
                             BackgroundColor="{AppThemeBinding Dark=DimGray,
                                                               Light=Gray}"

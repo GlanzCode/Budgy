@@ -38,6 +38,9 @@
                     Grid.Row="1"
                     Grid.ColumnSpan="2"
                     ItemsSource="{Binding Categories}">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout ItemSpacing="6" Orientation="Vertical" />
+                    </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <Grid ColumnDefinitions="*, Auto">
