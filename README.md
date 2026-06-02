@@ -8,3 +8,4 @@ Track your Budget and your fix costs
 - Charts of your categorizes
 
 ## Roadmap
+- Charts of your categorizes (Soon)
