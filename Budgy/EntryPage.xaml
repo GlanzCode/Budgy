@@ -12,12 +12,16 @@
                 Keyboard="Numeric"
                 Placeholder="Betrag"
                 Text="{Binding Amount}" />
-            <Grid ColumnDefinitions="*, Auto">
+            <Grid ColumnDefinitions="*, Auto, Auto">
                 <Label
                     Grid.Column="0"
-                    Text="Bezahl Datum"
+                    Text="Datum (Monatlich)"
                     VerticalTextAlignment="Center" />
                 <DatePicker Grid.Column="1" Date="{Binding PayDate}" />
+                <ImageButton
+                    Grid.Column="2"
+                    Command="{Binding ClearDateCommand}"
+                    Source="delete_white.png" />
             </Grid>
             <Grid ColumnDefinitions="*, Auto">
                 <Label Grid.Column="0" Text="{Binding ExpenseText}" />

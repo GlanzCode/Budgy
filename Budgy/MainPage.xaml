@@ -3,82 +3,146 @@
     x:Class="Budgy.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
     xmlns:local="clr-namespace:Budgy"
+    xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui"
     x:DataType="local:MainViewModel"
     Appearing="ContentPage_Appearing"
     Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:AmountToColorConverter
+                x:Key="NumberToColorConverter"
+                NegativeThreshold="0.61"
+                PositiveThreshold="0.4" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <Grid>
-        <Grid
-            Padding="12"
-            ColumnDefinitions="*,*"
-            ColumnSpacing="12"
-            RowDefinitions="Auto, Auto, *"
-            RowSpacing="6">
-            <Border
-                Grid.Row="0"
-                Grid.Column="0"
-                Padding="6"
-                BackgroundColor="{AppThemeBinding Dark=DimGray,
-                                                  Light=Gray}"
-                HeightRequest="70"
-                Stroke="Transparent"
-                StrokeShape="RoundRectangle 12"
-                StrokeThickness="0">
-                <Grid RowDefinitions="Auto, Auto">
-                    <Label
-                        Grid.Row="0"
-                        FontAttributes="Bold"
-                        FontSize="Large"
-                        Text="{Binding ExpenseAmount}" />
-                    <Label Grid.Row="1" Text="Fixe Ausgaben" />
-                </Grid>
-            </Border>
-            <Border
-                Grid.Row="0"
-                Grid.Column="1"
-                Padding="6"
-                BackgroundColor="{AppThemeBinding Dark=DimGray,
-                                                  Light=Gray}"
-                HeightRequest="70"
-                Stroke="Transparent"
-                StrokeShape="RoundRectangle 12"
-                StrokeThickness="0">
-                <Grid RowDefinitions="Auto, Auto">
-                    <Label
-                        Grid.Row="0"
-                        FontAttributes="Bold"
-                        FontSize="Large"
-                        Text="{Binding IncomeAmount}" />
-                    <Label Grid.Row="1" Text="Fixe Einnahmen" />
-                </Grid>
-            </Border>
-            <Border
-                Grid.Row="1"
-                Grid.ColumnSpan="2"
-                Padding="6"
-                BackgroundColor="{AppThemeBinding Dark=DimGray,
-                                                  Light=Gray}"
-                HeightRequest="70"
-                Stroke="Transparent"
-                StrokeShape="RoundRectangle 12"
-                StrokeThickness="0">
-                <Grid RowDefinitions="Auto, Auto">
-                    <Label
-                        Grid.Row="0"
-                        FontAttributes="Bold"
-                        FontSize="Large"
-                        Text="{Binding BudgetAmount}" />
-                    <Label Grid.Row="1" Text="Budget" />
-                </Grid>
-            </Border>
-        </Grid>
+        <ScrollView>
+            <Grid
+                Padding="12"
+                ColumnDefinitions="*,*"
+                ColumnSpacing="12"
+                RowDefinitions="Auto, Auto, Auto, Auto"
+                RowSpacing="6">
+                <Border
+                    Grid.Row="0"
+                    Grid.ColumnSpan="2"
+                    Padding="6"
+                    BackgroundColor="{AppThemeBinding Dark=DimGray,
+                                                      Light=Gray}"
+                    Stroke="Transparent"
+                    StrokeShape="RoundRectangle 12"
+                    StrokeThickness="0">
+                    <Grid ColumnDefinitions="Auto, *, Auto" RowDefinitions="Auto, Auto">
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            FontSize="24"
+                            Text="{Binding IncomeAmount}" />
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Text="Einnahmen" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            FontAttributes="Bold"
+                            FontSize="32"
+                            HorizontalOptions="Center"
+                            Text="{Binding BudgetAmount}" />
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            HorizontalTextAlignment="Center"
+                            Text="Budget" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            FontSize="24"
+                            Text="{Binding ExpenseAmount}" />
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="2"
+                            Text="Ausgaben" />
+                    </Grid>
+                </Border>
+                <Border
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    Padding="6"
+                    BackgroundColor="{AppThemeBinding Dark=DimGray,
+                                                      Light=Gray}"
+                    Stroke="Transparent"
+                    StrokeShape="RoundRectangle 12"
+                    StrokeThickness="0">
+                    <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, Auto, Auto">
+                        <Label Grid.Row="0" Text="Fixkosten Quote" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Text="{Binding BudgetRatio, StringFormat='{}{0:P0}'}" />
+                        <local:CustomProgressBar
+                            Grid.Row="1"
+                            Grid.ColumnSpan="2"
+                            CornerRadius="20"
+                            HeightRequest="20"
+                            Progress="{Binding BudgetRatio}"
+                            ProgressColor="{Binding BudgetRatio, Converter={local:AmountToColorConverter NegativeThreshold=0.61, PositiveThreshold=0.4, NegativeColor=DarkRed, NeutralColor=Orange, PositiveColor=LimeGreen}}" />
+                        <Label
+                            Grid.Row="2"
+                            Grid.ColumnSpan="2"
+                            Text="{Binding BudgetRatioText}" />
+                    </Grid>
+                </Border>
+
+                <Border
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    BackgroundColor="{AppThemeBinding Dark=DimGray,
+                                                      Light=Gray}"
+                    HeightRequest="350"
+                    Stroke="Transparent"
+                    StrokeShape="RoundRectangle 12"
+                    StrokeThickness="0">
+                    <VerticalStackLayout>
+                        <Label HorizontalTextAlignment="Center" Text="Ausgaben pro Kategorie" />
+                        <lvc:PieChart
+                            BackgroundColor="{AppThemeBinding Dark=DimGray,
+                                                              Light=Gray}"
+                            HeightRequest="300"
+                            LegendPosition="Bottom"
+                            Series="{Binding Series}" />
+                    </VerticalStackLayout>
+                </Border>
+                <Border
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    BackgroundColor="{AppThemeBinding Dark=DimGray,
+                                                      Light=Gray}"
+                    HeightRequest="350"
+                    Stroke="Transparent"
+                    StrokeShape="RoundRectangle 12"
+                    StrokeThickness="0">
+                    <VerticalStackLayout>
+                        <Label HorizontalTextAlignment="Center" Text="Einnahmen pro Kategorie" />
+                        <lvc:PieChart
+                            BackgroundColor="{AppThemeBinding Dark=DimGray,
+                                                              Light=Gray}"
+                            HeightRequest="300"
+                            LegendPosition="Bottom"
+                            Series="{Binding IncomePerCategorySeries}" />
+                    </VerticalStackLayout>
+                </Border>
+
+            </Grid>
+        </ScrollView>
         <Button
-            Margin="0,0,0,100"
+            Margin="0,0,0,80"
             Command="{Binding AddEntryCommand}"
             CornerRadius="40"
             HeightRequest="80"
+            HorizontalOptions="Center"
             ImageSource="add_white.png"
             VerticalOptions="End"
             WidthRequest="80" />

@@ -7,4 +7,6 @@ namespace Budgy;
 public interface ICalculationService
 {
     decimal CalculateBudget(decimal expense, decimal income);
+
+    double GetRatio(decimal expense, decimal income);
 }

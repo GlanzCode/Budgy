@@ -1,9 +1,10 @@
 ﻿using Budgy.Data;
 using Budgy.Feature.Category;
 using CommunityToolkit.Maui;
+using LiveChartsCore.SkiaSharpView.Maui;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Syncfusion.Maui.Toolkit.Hosting;
+using SkiaSharp.Views.Maui.Controls.Hosting;
 
 namespace Budgy
 {
@@ -15,7 +16,10 @@ namespace Budgy
             builder
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkit()
-                .ConfigureSyncfusionToolkit()
+#if ANDROID
+                .UseSkiaSharp()
+                .UseLiveCharts()
+#endif
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

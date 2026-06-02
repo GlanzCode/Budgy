@@ -106,6 +106,11 @@ public sealed partial class EntryViewModel : BaseViewModel, IQueryAttributable
         SelectedCategory = null;
     }
 
+    [RelayCommand]
+    private void ClearDate()
+    {
+        PayDate = null;
+    }
     private async Task LoadCategories()
     {
         var categories = await _categoryRepository.GetCategories();
