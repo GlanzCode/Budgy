@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using Budgy.Data;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace Budgy.Feature.Category;
 
-public sealed partial class CategoryViewModel : BaseViewModel
+public sealed partial class CategoryViewModel : BaseViewModel, IQueryAttributable
 {
     private readonly ICategoryRepository _categoryRepository;
 
@@ -89,6 +90,13 @@ public sealed partial class CategoryViewModel : BaseViewModel
         };
 
         return await Docutain.ColorPicker.PickColor(colorConfig);
+    }
+
+    public void ApplyQueryAttributes(IDictionary<string, object> query)
+    {
+        query.TryGetValue("category", out var category);
+
+        CurrentCategory = (Data.Category)category;
     }
 #endif
 }

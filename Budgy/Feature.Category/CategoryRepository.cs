@@ -29,7 +29,7 @@ public sealed class CategoryRepository : BaseRepository, ICategoryRepository
 
     public async Task<Data.Category?> GetGategoryById(int id)
     {
-        return await _db.Categories.FirstOrDefaultAsync(q => q.Id == id);
+        return await _db.Categories.AsNoTracking().FirstOrDefaultAsync(q => q.Id == id);
     }
 
     public async Task<Data.Category> Save(Data.Category category)

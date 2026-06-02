@@ -53,6 +53,30 @@ public sealed partial class SettingsViewModel : BaseViewModel
         await Shell.Current.GoToAsync(nameof(CategoryPage));
     }
 
+    [RelayCommand]
+    private async Task DeleteCategory(Category category)
+    {
+        if (category is null)
+            return;
+
+        Categories.Remove(category);
+        await _categoryRepository.Delete(category.Id);
+    }
+
+    [RelayCommand]
+    private async Task OpenCategory(Category category)
+    {
+        if (category is null)
+            return;
+
+        var navigationParameter = new Dictionary<string, object>
+        {
+              { "category", category }
+        };
+
+        await Shell.Current.GoToAsync(nameof(CategoryPage), navigationParameter);
+    }
+
 
     private async Task LoadCategories()
     {
