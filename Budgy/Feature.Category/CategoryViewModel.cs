@@ -92,11 +92,11 @@ public sealed partial class CategoryViewModel : BaseViewModel, IQueryAttributabl
         return await Docutain.ColorPicker.PickColor(colorConfig);
     }
 
+#endif
     public void ApplyQueryAttributes(IDictionary<string, object> query)
     {
         query.TryGetValue("category", out var category);
 
         CurrentCategory = (Data.Category)category;
     }
-#endif
 }
