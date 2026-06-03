@@ -67,7 +67,7 @@ public sealed partial class MainViewModel : BaseViewModel
 
     private void CreateIncomePerCategoryChart()
     {
-        var grouped = Entries.Where(q => !q.IsExpense).GroupBy(e => e.Category).ToList();
+        var grouped = Entries.Where(q => !q.IsExpense).GroupBy(e => e.Category.Id).ToList();
 
         IncomePerCategorySeries = grouped.Select((group, index) =>
         {
@@ -75,7 +75,7 @@ public sealed partial class MainViewModel : BaseViewModel
 
             return (ISeries)new PieSeries<decimal>
             {
-                Name = group.Key.Name,
+                Name = group.First().Category.Name,
                 Values = [group.Sum(e => e.Amount)],  // Summe je Kategorie
                 Fill = new SolidColorPaint(color),
                 InnerRadius = 30,
@@ -88,9 +88,10 @@ public sealed partial class MainViewModel : BaseViewModel
 
     private void CreateExpensePerCategoryChart()
     {
-        var grouped = Entries.Where(q => q.IsExpense).GroupBy(e => e.Category).ToList();
+        var grouped = Entries.Where(q => q.IsExpense).GroupBy(e => e.Category.Id).ToList();
 
-
+        
+        int i = 0;
         Series = grouped.Select((group, index) =>
         {
             // Farbe aus dem Model lesen (Hex-String wie "#FF5733")
@@ -98,7 +99,7 @@ public sealed partial class MainViewModel : BaseViewModel
 
             return (ISeries)new PieSeries<decimal>
             {
-                Name = group.Key.Name,
+                Name = group.First().Category.Name,
                 Values = [group.Sum(e => e.Amount)],  // Summe je Kategorie
                 Fill = new SolidColorPaint(color),
                 InnerRadius = 30,
