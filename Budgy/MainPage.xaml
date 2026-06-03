@@ -5,12 +5,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Budgy"
     xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui"
+    xmlns:utils="clr-namespace:Budgy.Utils"
     x:DataType="local:MainViewModel"
     Appearing="ContentPage_Appearing"
     Shell.NavBarIsVisible="False">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <local:AmountToColorConverter
+            <utils:AmountToColorConverter
                 x:Key="NumberToColorConverter"
                 NegativeThreshold="0.61"
                 PositiveThreshold="0.4" />
@@ -91,7 +92,7 @@
                             CornerRadius="20"
                             HeightRequest="20"
                             Progress="{Binding BudgetRatio}"
-                            ProgressColor="{Binding BudgetRatio, Converter={local:AmountToColorConverter NegativeThreshold=0.61, PositiveThreshold=0.4, NegativeColor=DarkRed, NeutralColor=Orange, PositiveColor=LimeGreen}}" />
+                            ProgressColor="{Binding BudgetRatio, Converter={utils:AmountToColorConverter NegativeThreshold=0.61, PositiveThreshold=0.4, NegativeColor=DarkRed, NeutralColor=Orange, PositiveColor=LimeGreen}}" />
                         <Label
                             Grid.Row="2"
                             Grid.ColumnSpan="2"

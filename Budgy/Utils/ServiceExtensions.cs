@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Budgy;
+namespace Budgy.Utils;
 
 public static class ServiceExtensions
 {

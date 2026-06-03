@@ -1,5 +1,6 @@
 ﻿using Budgy.Data;
 using Budgy.Feature.Category;
+using Budgy.Utils;
 using CommunityToolkit.Maui;
 using LiveChartsCore.SkiaSharpView.Maui;
 using Microsoft.EntityFrameworkCore;

@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Text;
 using Microsoft.Maui.Controls;
 
-namespace Budgy;
+namespace Budgy.Utils;
 
 public class AmountToColorConverter :  IValueConverter
 {

@@ -24,7 +24,7 @@
                 <LinearItemsLayout ItemSpacing="12" Orientation="Vertical" />
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="data:Entry">
+                <DataTemplate x:DataType="data:EntryTemplate">
                     <SwipeView>
                         <SwipeView.RightItems>
                             <SwipeItems Mode="Execute">

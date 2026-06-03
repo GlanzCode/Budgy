@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Budgy.Data;
 
-public sealed class Entry
+public sealed class EntryTemplate
 {
     [Key]
     public required int Id { get; set; }

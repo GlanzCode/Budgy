@@ -12,5 +12,5 @@ public sealed class Category
     public required string Name { get; set; }
     public string Color { get; set; }
 
-    public ICollection<Entry> Entries { get; set; } = [];
+    public ICollection<EntryTemplate> Entries { get; set; } = [];
 }

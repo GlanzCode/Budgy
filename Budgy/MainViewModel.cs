@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq.Expressions;
 using System.Text;
-using Entry = Budgy.Data.Entry;
+using EntryTemplate = Budgy.Data.EntryTemplate;
 
 namespace Budgy;
 
@@ -47,7 +47,7 @@ public sealed partial class MainViewModel : BaseViewModel
 
 
 
-    public ObservableCollection<Entry> Entries { get; private set; }
+    public ObservableCollection<EntryTemplate> Entries { get; private set; }
     public MainViewModel(ILogger<MainViewModel> logger, IEntryRepository entryRepository, ICalculationService calculationService) : base(logger)
     {
         _entryRepository = entryRepository;
@@ -147,7 +147,7 @@ public sealed partial class MainViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    private async Task Delete(Entry entry)
+    private async Task Delete(EntryTemplate entry)
     {
         var result = await Shell.Current.DisplayAlertAsync("Confirm Delete", "Are you sure you want to delete this entry?", "Yes", "No");
 
@@ -160,7 +160,7 @@ public sealed partial class MainViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    private async Task Open(Entry entry)
+    private async Task Open(EntryTemplate entry)
     {
         var navigationParameter = new Dictionary<string, object>
         {

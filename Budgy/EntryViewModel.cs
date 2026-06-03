@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
-using Entry = Budgy.Data.Entry;
+using EntryTemplate = Budgy.Data.EntryTemplate;
 
 namespace Budgy;
 
@@ -41,7 +41,7 @@ public sealed partial class EntryViewModel : BaseViewModel, IQueryAttributable
 
 
 
-    public Entry CurrentEntry
+    public EntryTemplate CurrentEntry
     {
         get;
         set
@@ -70,7 +70,7 @@ public sealed partial class EntryViewModel : BaseViewModel, IQueryAttributable
     {
         if (!IsValid())
             return;
-        var entry = new Entry
+        var entry = new EntryTemplate
         {
             Id = CurrentEntry?.Id ?? 0,
             IsExpense = IsExpense,
@@ -138,7 +138,7 @@ public sealed partial class EntryViewModel : BaseViewModel, IQueryAttributable
     {
         if (query.TryGetValue("entry", out var entry))
         {
-            CurrentEntry = (Entry)entry;
+            CurrentEntry = (EntryTemplate)entry;
         }
     }
 }

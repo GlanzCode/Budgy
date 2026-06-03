@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
-using Entry = Budgy.Data.Entry;
+using EntryTemplate = Budgy.Data.EntryTemplate;
 
 namespace Budgy;
 
@@ -18,9 +18,9 @@ public sealed partial class ListViewModel : BaseViewModel
     [ObservableProperty]
     private string? _searchText;
 
-    private readonly List<Entry> _entries = [];
+    private readonly List<EntryTemplate> _entries = [];
     private CancellationTokenSource? _searchCts;
-    public ObservableCollection<Entry> Entries { get; } = [];
+    public ObservableCollection<EntryTemplate> Entries { get; } = [];
 
 
     public ListViewModel(ILogger<ListViewModel> logger, IEntryRepository entryRepository) : base(logger)
@@ -35,7 +35,7 @@ public sealed partial class ListViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    private async Task DeleteEntry(Entry entry)
+    private async Task DeleteEntry(EntryTemplate entry)
     {
         Entries.Remove(entry);
 
@@ -43,7 +43,7 @@ public sealed partial class ListViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    private async Task OpenEntry(Entry entry)
+    private async Task OpenEntry(EntryTemplate entry)
     {
         var parameters = new Dictionary<string, object>
         {
@@ -91,7 +91,7 @@ public sealed partial class ListViewModel : BaseViewModel
         catch (TaskCanceledException) { }
     }
 
-    private void UpdateVisibleEntries(List<Entry> filtered)
+    private void UpdateVisibleEntries(List<EntryTemplate> filtered)
     {
 
         Entries.Clear();

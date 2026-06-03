@@ -8,7 +8,7 @@ namespace Budgy.Data;
 public sealed class AppDbContext : DbContext
 {
     public const string DatabaseName = "costly.db3";
-    public DbSet<Entry> Entries { get; set; }
+    public DbSet<EntryTemplate> Entries { get; set; }
     public DbSet<Category> Categories { get; set; }
 
     public required string DbPath { get; init; }
@@ -27,7 +27,10 @@ public sealed class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Entry>()
+        modelBuilder.Entity<EntryTemplate>()
+            .ToTable(nameof(EntryTemplate));
+
+        modelBuilder.Entity<EntryTemplate>()
             .HasOne(e => e.Category)
             .WithMany(e => e.Entries)
             .HasForeignKey(e => e.CategoryId)

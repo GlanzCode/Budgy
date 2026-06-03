@@ -2,18 +2,18 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Entry = Budgy.Data.Entry;
+using EntryTemplate = Budgy.Data.EntryTemplate;
 
 namespace Budgy;
 
 public interface IEntryRepository
 {
-    Task<IEnumerable<Entry>> GetEntries();
+    Task<IEnumerable<EntryTemplate>> GetEntries();
 
-    Task<Entry?> GetEntryById(int id);
+    Task<EntryTemplate?> GetEntryById(int id);
 
-    Task<Entry> SaveEntry(Entry entry);
+    Task<EntryTemplate> SaveEntry(EntryTemplate entry);
 
     Task Delete(int id);
-    Task<IEnumerable<Entry>> GetEntriesWithCategory();
+    Task<IEnumerable<EntryTemplate>> GetEntriesWithCategory();
 }
