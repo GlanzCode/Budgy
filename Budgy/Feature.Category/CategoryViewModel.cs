@@ -95,8 +95,8 @@ public sealed partial class CategoryViewModel : BaseViewModel, IQueryAttributabl
 #endif
     public void ApplyQueryAttributes(IDictionary<string, object> query)
     {
-        query.TryGetValue("category", out var category);
+        if (query.TryGetValue("category", out var category))
+            CurrentCategory = (Data.Category)category;
 
-        CurrentCategory = (Data.Category)category;
     }
 }
