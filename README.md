@@ -6,6 +6,8 @@ Track your Budget and your fix costs
 - Add fix Income
 - Get an overview of your Budget and costs
 - Charts of your categorizes
+- Rating of your Budget
 
 ## Roadmap
-- Charts of your categorizes (Soon)
+- History (Monthly, Yearly)
+- Future forecast
